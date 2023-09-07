@@ -1,0 +1,165 @@
+/* Resetear estilos por defecto y aplicar un estilo base al cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para el calendario */
+.calendar {
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 1200px; /* Establece un ancho máximo */
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Evita que las celdas se expandan al contenido */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-cell {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.date-cell {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd; /* Añadimos bordes para dividir las celdas */
+    font-size: 24px;
+}
+
+/* Cambiar el color de fondo al pasar el mouse sobre las celdas de fecha */
+.date-cell:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Estilos para la sección de tareas */
+.tasks {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #555;
+}
+
+.task-list,
+.completed-task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li,
+.completed-task-list li {
+    padding: 5px 0;
+}
+
+/* Aplicar estilo de tachado y color de texto para las tareas completadas */
+.completed-task-list li {
+    text-decoration: line-through;
+    color: #000;
+}
+
+/* Estilos para la leyenda de colores */
+.legend {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.color-legend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Estilos para las tareas */
+.task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-color  {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.red {
+    background-color: #FF5733; /* Rojo */
+}
+
+.orange {
+    background-color: #FFA500; /* Naranja */
+}
+
+.green {
+    background-color: #28A745; /* Verde */
+}
+
+.task-details {
+    flex-grow: 1;
+}
+
+.task-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-date {
+    font-size: 0.9rem;
+    color: #000;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
